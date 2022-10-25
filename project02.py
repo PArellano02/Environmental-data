@@ -33,7 +33,8 @@ plt.xticks(ticks= x_indexes, labels= emissions_years)
 plt.title('Emissions for U.S and China')
 plt.xlabel('Year')
 plt.ylabel('Emissions per Capita (metric Tons')
-
+plt.tight_layout()
+plt.ylim(0,20)
 plt.show()
 
 import json
