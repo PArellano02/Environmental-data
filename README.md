@@ -16,5 +16,4 @@ The following graphs and charts illustrate the data for the topics listeed above
 
 ### Global land and ocean temperature anomalies
 
-![Global land and ocean temperature anomalies](/Users/pedroarellano/Documents/GitHub/Environmental-data/GLOTA.jpg)
-)
+![Global land and ocean temperature anomalies](/Users/pedroarellano/Documents/GitHub/Environmental-data/GLOTA.png)
