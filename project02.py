@@ -40,6 +40,8 @@ plt.ylim([0,21])
 plt.legend()
 plt.show()
 
+
+
 import json
 
 with open('/Users/pedroarellano/Documents/GitHub/Environmental-data/China_pop.json', encoding= 'ascii') as f:
@@ -81,6 +83,7 @@ plt.title('Populations of U.S and China')
 plt.xlabel('Year')
 plt.ylabel('People')
 plt.legend()
+
 plt.xticks(rotation = 90,)
 plt.show()
 
@@ -122,6 +125,6 @@ ax.plot(s, t)
 ax.set(xlabel='year', ylabel='Degrees Celsius',
        title='Global Land and Ocean Temperature Anomalies, January-December')
 
-fig.savefig("test.png")
+
 plt.show()
 
