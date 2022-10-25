@@ -16,6 +16,7 @@ for i in range(len(emissions_dictionary)):
 
 
 
+
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
@@ -30,11 +31,13 @@ plt.bar(x_indexes + width, emissions_us,  width= width, color ='#008fd5',label =
 
 plt.xticks(ticks= x_indexes, labels= emissions_years)
 
-plt.title('Emissions for U.S and China')
+
+plt.title('Per Capita Emissions for U.S and China')
 plt.xlabel('Year')
-plt.ylabel('Emissions per Capita (metric Tons')
+plt.ylabel('Emissions per Capita (metric Tons)')
 plt.tight_layout()
-plt.ylim(0,20)
+plt.ylim([0,21])
+plt.legend()
 plt.show()
 
 import json
@@ -77,7 +80,7 @@ plt.xticks(ticks= x_indexes, labels= us_yearxs[30:])
 plt.title('Populations of U.S and China')
 plt.xlabel('Year')
 plt.ylabel('People')
-
+plt.legend()
 plt.xticks(rotation = 90,)
 plt.show()
 

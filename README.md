@@ -11,6 +11,7 @@ The following graphs and charts illustrate the data for the topics listeed above
 
 ### Population fo China and the United States
 
+![Global land and ocean temperature anomalies](Populations.png)
 
 ### Emmissions per capita
 
