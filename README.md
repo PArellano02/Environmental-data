@@ -36,4 +36,4 @@ Data from [United Nations Statistics Division](http://data.un.org/)
 
 This graph shows the temperature anomalies from 1880 to 2016. These anomalies are calculated by subtracting a baseline number from the average temperature that year. The baseline number is normally calculated by avaraging the temperature of 30 or more previous years. So... things are getting toasty. 
 
-This data was obtained from NCEI and NOAA [[here](https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series/globe/)
+This data was obtained from NCEI and NOAA [here](https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series/globe/)
