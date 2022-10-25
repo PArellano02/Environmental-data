@@ -9,10 +9,10 @@ emissions_us = []
 emissions_years = []
 for i in range(len(emissions_dictionary)):
     if emissions_dictionary[i][1] == 'China' and emissions_dictionary[i][3] == 'Emissions per capita (metric tons of carbon dioxide)' :
-        emissions_china.append(emissions_dictionary[i][4])
+        emissions_china.append(float(emissions_dictionary[i][4]))
         emissions_years.append(emissions_dictionary[i][2])
     elif emissions_dictionary[i][1] == 'United States of America' and emissions_dictionary[i][3] == 'Emissions per capita (metric tons of carbon dioxide)':
-        emissions_us.append(emissions_dictionary[i][4])
+        emissions_us.append(float(emissions_dictionary[i][4]))
 
 
 
@@ -23,21 +23,32 @@ import numpy as np
 
 
 
+                            # plt.bar(s, emissions_china, color ='#444444',label = 'China')
+                            # plt.show()
+                            # plt.bar(s, emissions_us, color ='#444444',label = 'U.S')
+
+                            # ax.set(xlabel='year', ylabel='Emissions',
+                            #        title='China per capital emissions')
+
+
 
 x_indexes = np.arange(len(emissions_years))
+# y_indexes = np.arange()
 width = .25
-plt.bar(x_indexes, emissions_china, width = width, color ='#444444',label = 'China')
-plt.bar(x_indexes + width, emissions_us,  width= width, color ='#008fd5',label = 'U.S')
+fig, ax = plt.subplots()
+
+ax.bar(x_indexes, emissions_china, width = width, color ='#444444',label = 'China')
+ax.bar(x_indexes + width, emissions_us,  width= width, color ='#008fd5',label = 'U.S')
 
 plt.xticks(ticks= x_indexes, labels= emissions_years)
-
+plt.yticks(ticks= range(21) , labels = range(21) )
 
 plt.title('Per Capita Emissions for U.S and China')
 plt.xlabel('Year')
 plt.ylabel('Emissions per Capita (metric Tons)')
 plt.tight_layout()
-plt.ylim([0,21])
 plt.legend()
+plt.grid()
 plt.show()
 
 
